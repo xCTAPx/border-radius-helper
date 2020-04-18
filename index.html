@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row" id="radiusTL">
+        <span>Top left corner radius: </span>
+        <input type="range" name="radiusTL" value="0" id="rangeTL" oninput="fixValue(inputTL, rangeTL)"/>
+        <input type="text" name="radiusTL" value="0" id="inputTL" oninput="fixRange(inputTL, rangeTL)"/>
+    </div>
+
+    <div class="row" id="radiusTR">
+        <span>Top right corner radius: </span>
+        <input type="range" name="radiusTR" value="0" id="rangeTR" oninput="fixValue(inputTR, rangeTR)"/>
+        <input type="text" name="radiusTR" value="0" id="inputTR" oninput="fixRange(inputTR, rangeTR)"/>
+    </div>
+
+    <div class="row" id="radiusBR">
+        <span>Bottom right corner radius: </span>
+        <input type="range" name="radiusBR" value="0" id="rangeBR" oninput="fixValue(inputBR, rangeBR)"/>
+        <input type="text" name="radiusBR" value="0" id="inputBR" oninput="fixRange(inputBR, rangeBR)"/>
+    </div>
+
+    <div class="row" id="radiusBL">
+        <span>Bottom left corner radius: </span>
+        <input type="range" name="radiusBL" value="0" id="rangeBL" oninput="fixValue(inputBL, rangeBL)"/>
+        <input type="text" name="radiusBL" value="0" id="inputBL" oninput="fixRange(inputBL, rangeBL)"/>
+    </div>
+
+    <div id="example"></div>
+    <span id="css"></span>
+    <script src="js.js"></script>
+</body>
+</html>
